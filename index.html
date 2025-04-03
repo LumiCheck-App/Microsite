@@ -56,13 +56,13 @@
               <a href="#hero" class="active">Home<br /></a>
             </li>
             <li><a href="#about">Sobre</a></li>
-            <li><a href="#services">Download</a></li>
+            <li><a href="#download">Download</a></li>
             <li><a href="#team">Equipa</a></li>
           </ul>
           <i class="mobile-nav-toggle d-none bi bi-list"></i>
         </nav>
 
-        <a class="btn-getstarted" style="margin: 0; margin-left: 58px" href="index.html#about">Download</a>
+        <a class="btn-getstarted" style="margin: 0; margin-left: 58px" href="index.html#download">Download</a>
       </div>
     </header>
 
@@ -77,10 +77,10 @@
           <h1>Bem vindo à <span>LumiCheck</span></h1>
           <p>Brilha fora do ecrã</p>
           <div class="d-flex">
-            <a href="#about" class="btn-get-started scrollto">Download</a>
-            <a href="https://www.youtube.com/watch?v=Y7f98aduVJ8" class="glightbox btn-watch-video d-flex align-items-center"
-              ><i class="bi bi-play-circle"></i><span>Ver Video</span></a
-            >
+            <a href="#download" class="btn-get-started scrollto">Download</a>
+            <a href="https://www.youtube.com/watch?v=Y7f98aduVJ8" class="glightbox-video btn-watch-video d-flex align-items-center">
+              <i class="bi bi-play-circle"></i><span>Ver Video</span>
+            </a>
           </div>
         </div>
       </section>
@@ -309,7 +309,11 @@
                 única base de código. Para o backend usamos o FastAPI, que é um framework moderno e rápido para construir APIs com Python. A
                 nossa base de dados é com PostgreSQL, um banco de dados relacional poderoso e confiável.
               </p>
-              <a class="cta-btn align-self-start" href="#">Mais Detalhes</a>
+              <a href="images/Arquitetura Completa.png" 
+                 class="cta-btn align-self-start glightbox"
+                 data-gallery="architecture">
+                Mais Detalhes
+              </a>
             </div>
 
             <div class="col-lg-4 col-md-6 order-first order-md-last d-flex align-items-center">
@@ -322,119 +326,32 @@
       </section>
       <!-- /Call To Action Section -->
 
-      <!-- Onfocus Section -->
-      <section id="onfocus" class="onfocus section dark-background" style="margin-top: 120px; margin-bottom: 60px">
-        <div class="container-fluid" data-aos="fade-up">
-          <div class="row g-0">
-            <div class="col-lg-6 video-play position-relative">
-              <a href="https://www.youtube.com/watch?v=Y7f98aduVJ8" class="glightbox pulsating-play-btn"></a>
+      <section id="download" class="section" style="background-color: #FFE5B4;">
+        <div class="container" data-aos="fade-up">
+          <div class="row g-5 align-items-center">
+            <div class="col-lg-6 text-center">
+              <img src="images/qrcode.png" alt="QR Code LumiCheck APK" class="img-fluid" style="max-width: 300px;" />
+              <p class="mt-3">Scan para instalar</p>
             </div>
             <div class="col-lg-6">
-              <div class="content d-flex flex-column justify-content-center h-100">
-                <div class="container section-title" data-aos="fade-up">
-                  <h2>Download</h2>
-                  <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
-                </div>
-                <p class="fst-italic">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-                  aliqua.
-                </p>
-                <ul>
-                  <li><i class="bi bi-check-circle"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-                  <li><i class="bi bi-check-circle"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
-                  <li>
-                    <i class="bi bi-check-circle"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-                    reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.
-                  </li>
-                </ul>
-                <a href="#" class="read-more align-self-start"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
+              <div class="section-title text-start">
+                <h2>Download</h2>
+                <p>Instala já a LumiCheck no teu dispositivo Android</p>
               </div>
             </div>
           </div>
         </div>
       </section>
-      <!-- /Onfocus Section -->
+      
 
-      <!-- Services Section -->
-      <section id="services" class="services section">
-        <!-- Section Title -->
-        <div class="container section-title" data-aos="fade-up">
-          <h2>Our Services</h2>
-          <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
-        </div>
-        <!-- End Section Title -->
 
-        <div class="container" data-aos="fade-up" data-aos-delay="100">
-          <div class="row gy-5">
-            <div class="col-xl-4 col-md-6" data-aos="zoom-in" data-aos-delay="200">
-              <div class="service-item">
-                <div class="img">
-                  <img src="assets/img/services-1.jpg" class="img-fluid" alt="" />
-                </div>
-                <div class="details position-relative">
-                  <div class="icon">
-                    <i class="bi bi-activity"></i>
-                  </div>
-                  <a href="#" class="stretched-link">
-                    <h3>Nesciunt Mete</h3>
-                  </a>
-                  <p>Provident nihil minus qui consequatur non omnis maiores. Eos accusantium minus dolores iure perferendis.</p>
-                </div>
-              </div>
-            </div>
-            <!-- End Service Item -->
-
-            <div class="col-xl-4 col-md-6" data-aos="zoom-in" data-aos-delay="300">
-              <div class="service-item">
-                <div class="img">
-                  <img src="assets/img/services-2.jpg" class="img-fluid" alt="" />
-                </div>
-                <div class="details position-relative">
-                  <div class="icon">
-                    <i class="bi bi-broadcast"></i>
-                  </div>
-                  <a href="#" class="stretched-link">
-                    <h3>Eosle Commodi</h3>
-                  </a>
-                  <p>
-                    Ut autem aut autem non a. Sint sint sit facilis nam iusto sint. Libero corrupti neque eum hic non ut nesciunt dolorem.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <!-- End Service Item -->
-
-            <div class="col-xl-4 col-md-6" data-aos="zoom-in" data-aos-delay="400">
-              <div class="service-item">
-                <div class="img">
-                  <img src="assets/img/services-3.jpg" class="img-fluid" alt="" />
-                </div>
-                <div class="details position-relative">
-                  <div class="icon">
-                    <i class="bi bi-easel"></i>
-                  </div>
-                  <a href="#" class="stretched-link">
-                    <h3>Ledo Markt</h3>
-                  </a>
-                  <p>
-                    Ut excepturi voluptatem nisi sed. Quidem fuga consequatur. Minus ea aut. Vel qui id voluptas adipisci eos earum
-                    corrupti.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <!-- End Service Item -->
-          </div>
-        </div>
-      </section>
-      <!-- /Services Section -->
 
       <!-- Team Section -->
       <section id="team" class="team section">
         <!-- Section Title -->
         <div class="container section-title" data-aos="fade-up">
-          <h2>Our Team</h2>
-          <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+          <h2>A nossa equipa</h2>
+          <p>Somos estudantes do Mestrado em Comunicação e Tecnologias Web. Este projeto foi feito no contexto do CBL (Challenge-Based Learning).</p>
         </div>
         <!-- End Section Title -->
 
@@ -443,17 +360,12 @@
             <div class="col-xl-4 col-md-6 d-flex" data-aos="zoom-in" data-aos-delay="200">
               <div class="team-member">
                 <div class="member-img">
-                  <img src="assets/img/team/team-1.jpg" class="img-fluid" alt="" />
+                  <img src="images/equipa/Rodrigo.png" class="img-fluid" alt="" />
                 </div>
                 <div class="member-info">
-                  <div class="social">
-                    <a href=""><i class="bi bi-twitter-x"></i></a>
-                    <a href=""><i class="bi bi-facebook"></i></a>
-                    <a href=""><i class="bi bi-instagram"></i></a>
-                    <a href=""><i class="bi bi-linkedin"></i></a>
-                  </div>
-                  <h4>Walter White</h4>
-                  <span>Chief Executive Officer</span>
+                  <h4>Rodrigo Graça</h4>
+                  <span>UX/UI Designer</span>
+                  <span>Full Stack Developer</span>
                 </div>
               </div>
             </div>
@@ -462,17 +374,12 @@
             <div class="col-xl-4 col-md-6 d-flex" data-aos="zoom-in" data-aos-delay="400">
               <div class="team-member">
                 <div class="member-img">
-                  <img src="assets/img/team/team-2.jpg" class="img-fluid" alt="" />
+                  <img src="images/equipa/Tiago.png" class="img-fluid" alt="" />
                 </div>
                 <div class="member-info">
-                  <div class="social">
-                    <a href=""><i class="bi bi-twitter-x"></i></a>
-                    <a href=""><i class="bi bi-facebook"></i></a>
-                    <a href=""><i class="bi bi-instagram"></i></a>
-                    <a href=""><i class="bi bi-linkedin"></i></a>
-                  </div>
-                  <h4>Sarah Jhonson</h4>
-                  <span>Product Manager</span>
+                  <h4>Tiago Reis</h4>
+                  <span>UX/UI Designer</span>
+                  <span>Full Stack Developer</span>
                 </div>
               </div>
             </div>
@@ -481,17 +388,12 @@
             <div class="col-xl-4 col-md-6 d-flex" data-aos="zoom-in" data-aos-delay="600">
               <div class="team-member">
                 <div class="member-img">
-                  <img src="assets/img/team/team-3.jpg" class="img-fluid" alt="" />
+                  <img src="images/equipa/Vania.png" class="img-fluid" alt="" />
                 </div>
                 <div class="member-info">
-                  <div class="social">
-                    <a href=""><i class="bi bi-twitter-x"></i></a>
-                    <a href=""><i class="bi bi-facebook"></i></a>
-                    <a href=""><i class="bi bi-instagram"></i></a>
-                    <a href=""><i class="bi bi-linkedin"></i></a>
-                  </div>
-                  <h4>William Anderson</h4>
-                  <span>CTO</span>
+                  <h4>Vânia Morais</h4>
+                  <span>Product Manager</span>
+                  <span>Full Stack Developer</span>
                 </div>
               </div>
             </div>
@@ -508,13 +410,10 @@
           <div class="row">
             <div class="col-lg-6 col-md-6 footer-about">
               <a href="index.html" class="logo d-flex align-items-center">
-                <span class="sitename">HeroBiz</span>
+                <span class="sitename">LumiCheck</span>
               </a>
               <div class="footer-contact py-3">
-                <p>A108 Adam Street</p>
-                <p>New York, NY 535022</p>
-                <p class="mt-3"><strong>Phone:</strong> <span>+1 5589 55488 55</span></p>
-                <p><strong>Email:</strong> <span>info@example.com</span></p>
+                <p><strong>Email:</strong> <span>lumicheck.app@gmail.com</span></p>
               </div>
             </div>
 
@@ -522,8 +421,8 @@
               <h4>Useful Links</h4>
               <ul>
                 <li><a href="#">Home</a></li>
-                <li><a href="#">About us</a></li>
-                <li><a href="#">Services</a></li>
+                <li><a href="#about">Sobre</a></li>
+                <li><a href="#download">Download</a></li>
               </ul>
             </div>
           </div>
@@ -547,9 +446,8 @@
           </div>
 
           <div class="social-links order-first order-lg-last mb-3 mb-lg-0">
-            <a href=""><i class="bi bi-twitter-x"></i></a>
             <a href=""><i class="bi bi-facebook"></i></a>
-            <a href=""><i class="bi bi-instagram"></i></a>
+            <a href="https://www.instagram.com/lumicheck.app"><i class="bi bi-instagram"></i></a>
             <a href=""><i class="bi bi-linkedin"></i></a>
           </div>
         </div>

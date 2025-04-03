@@ -105,9 +105,19 @@
   /**
    * Initiate glightbox
    */
-  const glightbox = GLightbox({
-    selector: '.glightbox'
+  const videoLightbox = GLightbox({
+    selector: '.glightbox-video',
+    loop: false, 
+    touchNavigation: false, 
+    autoplayVideos: true
   });
+
+  const glightbox = GLightbox({
+    selector: '.glightbox',
+    loop: false,
+    touchNavigation: false
+  });
+  
 
   /**
    * Init swiper sliders
